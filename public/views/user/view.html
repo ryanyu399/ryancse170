@@ -1,0 +1,26 @@
+<form class="form-vertical">
+<h1><span data-ng-bind="user.firstName"></span> <span data-ng-bind="user.lastName"></span></h1>
+
+<fieldset>
+<legend>Contact Info</legend>
+<div class="control-group">
+    <label class="control-label"><span class="icon-envelope"></span> E-mail: <a href="#/message/email/{{user._id}}"><span data-ng-bind="user.email"></span></a></label>
+</div>
+
+<div class="control-group">
+    <label class="control-label"><span class="icon-phone"></span>Phone #: <a href="#/message/sms/{{user._id}}"><span data-ng-bind="user.phone"></span></a></label>
+</div>
+</fieldset>
+<fieldset>
+<legend>Appointments</legend>
+
+    <p>Something might go here eventually</p>
+
+<div class="control-group">
+    <div class="controls">
+        <a href="#/users" class="btn btn-small" type="button">Back to List</a>
+    </div>
+</div>
+</fieldset>
+
+</form>

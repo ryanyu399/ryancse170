@@ -1,0 +1,40 @@
+<h1>Email {{user.firstName}} {{user.lastName}}</h1>
+
+<form>
+
+    <div class="control-group">
+
+        <label class="control-label" for="email">E-mail:</label>
+        <div class="controls">
+            <input type="email" name="email" readonly id="email" data-ng-model="message.email" size="50">
+        </div>
+
+    </div>
+
+    <div class="control-group">
+
+        <label class="control-label" for="subject">Subject:</label>
+        <div class="controls">
+            <input type="text" id="subject" data-ng-model="message.subject" size="50">
+        </div>
+
+    </div>
+
+    <div class="control-group">
+
+        <label class="control-label" for="messageBody">Message:</label>
+        <div class="controls">
+            <textarea id="messageBody" data-ng-model="message.text" rows="10" cols="80"></textarea>
+        </div>
+
+    </div>
+
+    <div class="control-group">
+        <div class="controls">
+            <button class="btn btn-small" type="button"  data-ng-click="doCancel()">Cancel</button>
+            <button class="btn btn-small btn-primary" type="button"
+                    data-ng-click="sendEmail()">Send</button>
+        </div>
+    </div>
+
+</form>

@@ -1,0 +1,43 @@
+
+
+<form>
+    <div class="control-group">
+     <label class="control-label" for="firstName">First Name:</label>
+      <div class="controls">
+        <input type="text" name="firstName" id="firstName" placeholder="First Name" data-ng-model="user.firstName" size="50">
+      </div>
+    </div>
+
+    <div class="control-group">
+     <label class="control-label" for="lastName">Last Name:</label>
+     <div class="controls">
+       <input type="text" name="lastName" id="lastName" placeholder="Last Name" data-ng-model="user.lastName" size="50">
+     </div>
+    </div>
+
+    <div class="control-group">
+
+    <label class="control-label" for="email">E-mail:</label>
+     <div class="controls">
+       <input type="email" name="email" id="email" placeholder="youremail@provider.com" data-ng-model="user.email" size="50">
+     </div>
+    </div>
+
+    <div class="control-group">
+
+    <label class="control-label" for="phone">Phone #:</label>
+     <div class="controls">
+        <input type="tel" name="phone" id="phone" placeholder="555-124-2235" data-ng-model="user.phone" size="50">
+     </div>
+    </div>
+
+
+    <div class="control-group">
+     <div class="controls">
+       <button class="btn btn-small" type="button"  data-ng-click="doCancel()">Cancel</button>
+       <button class="btn btn-small btn-primary" type="button"
+               data-ng-click="doUpdate()">Update</button>
+     </div>
+    </div>
+
+</form>

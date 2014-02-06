@@ -1,0 +1,31 @@
+<h1>Text {{user.firstName}} {{user.lastName}}</h1>
+
+<form>
+
+    <div class="control-group">
+
+        <label class="control-label" for="phone">Phone:</label>
+        <div class="controls">
+            <input type="tel" id="phone" data-ng-model="message.phone" readonly size="50">
+        </div>
+
+    </div>
+
+    <div class="control-group">
+
+        <label class="control-label" for="messageBody">Message:</label>
+        <div class="controls">
+            <textarea id="messageBody" data-ng-model="message.text" rows="10" cols="80"></textarea>
+        </div>
+
+    </div>
+
+    <div class="control-group">
+        <div class="controls">
+            <button class="btn btn-small" type="button"  data-ng-click="doCancel()">Cancel</button>
+            <button class="btn btn-small btn-primary" type="button"
+                    data-ng-click="sendSMS()">Send</button>
+        </div>
+    </div>
+
+</form>
